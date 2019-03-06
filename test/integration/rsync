@@ -1,0 +1,3 @@
+# rsync test command line:
+# 	simple sync of dst with src
+rsync -r data/case1/src/ data/case1/dst/

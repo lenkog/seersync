@@ -1,0 +1,7 @@
+*.pyc
+/test/integration/data/case1
+/build
+/dist
+/seersync.egg-info
+.project
+.pydevproject
