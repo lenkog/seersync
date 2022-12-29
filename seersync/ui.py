@@ -149,7 +149,7 @@ class _Window(QWidget):
         self.timeLastCountRefresh = 0
 
         self.commandLineTxt = QPlainTextEdit()
-        self.commandLineTxt.setFixedHeight(3 * self.commandLineTxt.fontMetrics().lineSpacing() + self.commandLineTxt.contentsMargins().top() + self.commandLineTxt.contentsMargins().bottom() + 2 * self.commandLineTxt.document().documentMargin())
+        self.commandLineTxt.setFixedHeight(int(3 * self.commandLineTxt.fontMetrics().lineSpacing() + self.commandLineTxt.contentsMargins().top() + self.commandLineTxt.contentsMargins().bottom() + 2 * self.commandLineTxt.document().documentMargin()))
         self.commandLineTxt.setPlainText(' '.join(map(shlex.quote, commandLine)))
         self.commandLineTxt.textChanged.connect(self.onCommandLineChanged)
 
